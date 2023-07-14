@@ -1,7 +1,8 @@
-const createMessage = (body) => {
+const createMessage = (body, sessionId) => {
   return {
     body,
-    type: 'string',
+    sessionId,
+    type: 'type',
     source: 'source'
   }
 }
